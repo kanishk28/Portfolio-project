@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Kanishk N. Tyagi</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#experience">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#experience">Projects</a></li>
+                <li><a href="#experience">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="mobile-nav">
+        <div class="logo">Kanishk N. Tyagi</div>
+        <div class="mobile-menu">
+
+            <div class="mobilenav-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#experience" onclick="togglemenu()">About</a></li>
+                <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+                <li><a href="#experience" onclick="togglemenu()">Projects</a></li>
+                <li><a href="#experience" onclick="togglemenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container"><img src="assets/Profile pic.jpeg" alt="Kanishk Narain Tyagi Profile Pic"></div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello I'm</p>
+            <h1 class="title">Kanishk N. Tyagi</h1>
+            <p class="section_text-p2">Frontend Developer</p>
+            <div class="btn-container"><button class="btn btn-color-2" onclick="window.open('./assets/kanishk_cv.pdf')">Download CV</button><button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button></div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/kanishk-narain-tyagi-15117121a/'">
+                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/kanishk28'">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
